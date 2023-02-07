@@ -8,7 +8,7 @@ const initialState = {
 export const fetchQoutes = createAsyncThunk(
   'homepage/fetchQuotes',
   async () => {
-    // const symbols = ['IBM', '300135.SHZ'];
+    // const symbols = ['IBM', 'AAPL', 'AMZN', 'META', 'MSFT'];
     // const apikey = process.env.REACT_APP_API_KEY;
     const quotes = [
       {
