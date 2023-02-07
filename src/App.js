@@ -1,7 +1,6 @@
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import Homepage from './features/homepage/Homepage';
 import Details from './features/homepage/Details';
-import './App.css';
 
 const App = () => (
   <BrowserRouter>
