@@ -3,16 +3,25 @@ import { BrowserRouter } from 'react-router-dom';
 import Card from '../features/homepage/Card';
 
 export const mockQuote = {
-  '01. symbol': 'IBM',
-  '02. open': '135.8300',
-  '03. high': '136.3200',
-  '04. low': '134.9500',
-  '05. price': '136.1800',
-  '06. volume': '4841300',
-  '07. latest trading day': '2023-02-06',
-  '08. previous close': '136.9400',
-  '09. change': '-0.7600',
-  '10. change percent': '-0.5550%',
+  "ticker": "META",
+  "name": "Meta Platforms Inc",
+  "exchange_short": "NASDAQ",
+  "exchange_long": "NASDAQ Stock Exchange",
+  "mic_code": "XNAS",
+  "currency": "USD",
+  "price": 183.5,
+  "day_high": 190.82,
+  "day_low": 182.94,
+  "day_open": 190.3,
+  "52_week_high": 236.86,
+  "52_week_low": 88.09,
+  "market_cap": 502465953792,
+  "previous_close_price": 191.71,
+  "previous_close_price_time": "2023-02-07T15:59:53.000000",
+  "day_change": -4.47,
+  "volume": 856883,
+  "is_extended_hours_price": false,
+  "last_trade_time": "2023-02-08T15:49:19.000000"
 }
 
 describe('Details.js component', () => {
@@ -22,7 +31,7 @@ describe('Details.js component', () => {
         <Card quote={mockQuote} />
       </BrowserRouter>,
     );
-    expect(screen.getByText('IBM')).toBeInTheDocument();
-    expect(screen.getByText(/136.1800/i)).toBeInTheDocument();
+    expect(screen.getByText('META')).toBeInTheDocument();
+    expect(screen.getByText(/183.5/i)).toBeInTheDocument();
   });
 });

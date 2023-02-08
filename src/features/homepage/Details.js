@@ -21,79 +21,83 @@ const Details = () => {
       </nav>
       <header id="home-header">
         <div className="headerImg">
-          <Img symbol={quote['01. symbol']} />
+          <Img symbol={quote.ticker} />
         </div>
         <h2>
           Company:&nbsp;
           <br />
-          {quote['01. symbol']}
+          {quote.ticker}
         </h2>
       </header>
       <div id="separator"><h2>COMPANY BREAKDOWN</h2></div>
       <ul id="details-list">
         <li>
+          <p>Currency:</p>
+          <div className="listRightSec">
+            <p>{quote.currency}</p>
+            <BsArrowRightCircle id="enterIcon" />
+          </div>
+        </li>
+        <li>
           <p>Price:</p>
           <div className="listRightSec">
-            <p>
-              {quote['05. price']}
-              $
-            </p>
+            <p>{quote.price}</p>
             <BsArrowRightCircle id="enterIcon" />
           </div>
         </li>
         <li>
           <p>Open:</p>
           <div className="listRightSec">
-            <p>{quote['02. open']}</p>
+            <p>{quote.day_open}</p>
             <BsArrowRightCircle id="enterIcon" />
           </div>
         </li>
         <li>
           <p>High:</p>
           <div className="listRightSec">
-            <p>{quote['03. high']}</p>
+            <p>{quote.day_high}</p>
             <BsArrowRightCircle id="enterIcon" />
           </div>
         </li>
         <li>
           <p>Low:</p>
           <div className="listRightSec">
-            <p>{quote['04. low']}</p>
-            <BsArrowRightCircle id="enterIcon" />
-          </div>
-        </li>
-        <li>
-          <p>Volume:</p>
-          <div className="listRightSec">
-            <p>{quote['06. volume']}</p>
-            <BsArrowRightCircle id="enterIcon" />
-          </div>
-        </li>
-        <li>
-          <p>Latest trading day:</p>
-          <div className="listRightSec">
-            <p>{quote['07. latest trading day']}</p>
-            <BsArrowRightCircle id="enterIcon" />
-          </div>
-        </li>
-        <li>
-          <p>Previouse close:</p>
-          <div className="listRightSec">
-            <p>{quote['08. previous close']}</p>
+            <p>{quote.day_low}</p>
             <BsArrowRightCircle id="enterIcon" />
           </div>
         </li>
         <li>
           <p>Change:</p>
           <div className="listRightSec">
-            <p>{quote['09. change']}</p>
+            <p>{quote.day_change}</p>
             <BsArrowRightCircle id="enterIcon" />
           </div>
         </li>
         <li>
-          <p>Change percent:</p>
+          <p>Volume:</p>
           <div className="listRightSec">
-            <p>{quote['10. change percent']}</p>
+            <p>{quote.volume}</p>
+            <BsArrowRightCircle id="enterIcon" />
+          </div>
+        </li>
+        <li>
+          <p>Last trade time:</p>
+          <div className="listRightSec">
+            <p>{quote.last_trade_time}</p>
+            <BsArrowRightCircle id="enterIcon" />
+          </div>
+        </li>
+        <li>
+          <p>Previouse close:</p>
+          <div className="listRightSec">
+            <p>{quote.previous_close_price}</p>
+            <BsArrowRightCircle id="enterIcon" />
+          </div>
+        </li>
+        <li>
+          <p>Exchange:</p>
+          <div className="listRightSec">
+            <p>{quote.exchange_short}</p>
             <BsArrowRightCircle id="enterIcon" />
           </div>
         </li>
