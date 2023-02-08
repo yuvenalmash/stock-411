@@ -2,7 +2,7 @@ import { render, screen,} from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 import Card from '../features/homepage/Card';
 
-const mockQuote = {
+export const mockQuote = {
   '01. symbol': 'IBM',
   '02. open': '135.8300',
   '03. high': '136.3200',

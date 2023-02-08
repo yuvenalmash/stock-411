@@ -1,4 +1,4 @@
-import { render, screen, waitFor } from '@testing-library/react';
+import { screen, waitFor } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 import { renderWithProviders } from '../__mocks__/test-utils';
 import Homepage from '../features/homepage/Homepage';
