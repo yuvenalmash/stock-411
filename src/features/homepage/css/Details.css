@@ -9,10 +9,10 @@
   gap: 10px;
 }
 
-#details-list li:nth-child(odd){
-  background-color: #4066AD;
+#details-list li:nth-child(odd) {
+  background-color: #4066ad;
 }
 
-#details-list li:nth-child(even){
-  background-color: #3C5EA0;
+#details-list li:nth-child(even) {
+  background-color: #3c5ea0;
 }

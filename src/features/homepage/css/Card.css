@@ -3,6 +3,7 @@
   flex-direction: column;
   text-align: right;
   padding: 7px;
+
   /* height: 130px; */
 }
 
@@ -27,6 +28,7 @@
   align-items: center;
   padding: 20px;
   width: 90%;
+
   /* max-height: 70px; */
 }
 
