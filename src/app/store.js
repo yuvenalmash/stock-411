@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import gainersReducer from '../features/gainers/gainersSlice';
+import homepageReducer from '../features/homepage/homepageSlice';
 
 const store = configureStore({
   reducer: {
-    gainers: gainersReducer,
+    homepage: homepageReducer,
   },
 });
 

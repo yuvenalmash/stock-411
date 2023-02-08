@@ -1,0 +1,38 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  padding: 7px;
+
+  /* height: 130px; */
+}
+
+#card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#enterIcon {
+  color: #fff;
+  font-size: 18px;
+}
+
+.logos {
+  font-size: 80px;
+  color: #2d4573;
+}
+
+#imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 90%;
+
+  /* max-height: 70px; */
+}
+
+#imgContainer img {
+  max-width: 100%;
+  height: 35px;
+}
