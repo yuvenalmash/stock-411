@@ -26,7 +26,6 @@ const Homepage = () => {
     }
   });
   const quotes = useSelector(selectAllQuotes);
-  console.log(`quotes = ${JSON.stringify(quotes)}`);
   return (
     <main className="homepage">
       <nav id="home-nav">
@@ -71,7 +70,7 @@ const Homepage = () => {
       <div id="separator"><h2>STATS BY COMPANY</h2></div>
       <ul id="home-list">
         {quotes.map((quote) => (
-          <li key={quote['01. symbol']}>
+          <li key={quote.ticker}>
             <Card
               quote={quote}
             />

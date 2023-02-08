@@ -28,15 +28,15 @@ const Card = (props) => {
     <section className="card">
       <header id="card-header">
         <div id="imgContainer">
-          <Img symbol={quote['01. symbol']} />
+          <Img symbol={quote.ticker} />
         </div>
         <Link to="details" state={quote}><BsArrowRightCircle id="enterIcon" /></Link>
       </header>
       <h2>
-        {quote['01. symbol']}
+        {quote.ticker}
       </h2>
       <p id="card-price">
-        {quote['05. price']}
+        {quote.price}
         $
       </p>
     </section>
@@ -46,7 +46,10 @@ const Card = (props) => {
 export default Card;
 
 Card.propTypes = {
-  quote: PropTypes.objectOf(PropTypes.string).isRequired,
+  quote: PropTypes.shape({
+    ticker: PropTypes.string,
+    price: PropTypes.number,
+  }).isRequired,
 };
 Img.propTypes = {
   symbol: PropTypes.string.isRequired,
