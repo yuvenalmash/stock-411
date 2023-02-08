@@ -26,7 +26,6 @@ const Homepage = () => {
     }
   });
   const quotes = useSelector(selectAllQuotes);
-  console.log(`quotes = ${JSON.stringify(quotes)}`);
   return (
     <main className="homepage">
       <nav id="home-nav">
