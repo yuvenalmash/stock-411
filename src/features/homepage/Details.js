@@ -1,59 +1,104 @@
 import { Link, useLocation } from 'react-router-dom';
+import {
+  BsMic, BsGear, BsChevronLeft, BsArrowRightCircle,
+} from 'react-icons/bs';
+import { Img } from './Card';
+import './css/Homepage.css';
+import './css/Details.css';
 
 const Details = () => {
   const location = useLocation();
   const quote = location.state;
   return (
-    <div className="details">
+    <main className="details">
       <nav id="details-nav">
-        <Link to="/">back</Link>
+        <Link to="/"><BsChevronLeft className="navIcon" /></Link>
+        Company Details
+        <div id="rightNav">
+          <BsMic className="navIcon" />
+          <BsGear className="navIcon" />
+        </div>
       </nav>
-      <header id="details-header">
+      <header id="home-header">
+        <div className="headerImg">
+          <Img symbol={quote['01. symbol']} />
+        </div>
         <h2>
-          Details:&nbsp;
+          Company:&nbsp;
+          <br />
           {quote['01. symbol']}
         </h2>
       </header>
+      <div id="separator"><h2>COMPANY BREAKDOWN</h2></div>
       <ul id="details-list">
-        <p>
-          Price:&nbsp;
-          {quote['05. price']}
-          $
-        </p>
-        <p>
-          Open:&nbsp;
-          {quote['02. open']}
-        </p>
-        <p>
-          High:&nbsp;
-          {quote['03. high']}
-        </p>
-        <p>
-          Low:&nbsp;
-          {quote['04. low']}
-        </p>
-        <p>
-          Volume:&nbsp;
-          {quote['06. volume']}
-        </p>
-        <p>
-          Latest trading day:&nbsp;
-          {quote['07. latest trading day']}
-        </p>
-        <p>
-          Previouse close:&nbsp;
-          {quote['08. previous close']}
-        </p>
-        <p>
-          Change:&nbsp;
-          {quote['09. change']}
-        </p>
-        <p>
-          Change percent:&nbsp;
-          {quote['10. change percent']}
-        </p>
+        <li>
+          <p>Price:</p>
+          <div className="listRightSec">
+            <p>
+              {quote['05. price']}
+              $
+            </p>
+            <BsArrowRightCircle id="enterIcon" />
+          </div>
+        </li>
+        <li>
+          <p>Open:</p>
+          <div className="listRightSec">
+            <p>{quote['02. open']}</p>
+            <BsArrowRightCircle id="enterIcon" />
+          </div>
+        </li>
+        <li>
+          <p>High:</p>
+          <div className="listRightSec">
+            <p>{quote['03. high']}</p>
+            <BsArrowRightCircle id="enterIcon" />
+          </div>
+        </li>
+        <li>
+          <p>Low:</p>
+          <div className="listRightSec">
+            <p>{quote['04. low']}</p>
+            <BsArrowRightCircle id="enterIcon" />
+          </div>
+        </li>
+        <li>
+          <p>Volume:</p>
+          <div className="listRightSec">
+            <p>{quote['06. volume']}</p>
+            <BsArrowRightCircle id="enterIcon" />
+          </div>
+        </li>
+        <li>
+          <p>Latest trading day:</p>
+          <div className="listRightSec">
+            <p>{quote['07. latest trading day']}</p>
+            <BsArrowRightCircle id="enterIcon" />
+          </div>
+        </li>
+        <li>
+          <p>Previouse close:</p>
+          <div className="listRightSec">
+            <p>{quote['08. previous close']}</p>
+            <BsArrowRightCircle id="enterIcon" />
+          </div>
+        </li>
+        <li>
+          <p>Change:</p>
+          <div className="listRightSec">
+            <p>{quote['09. change']}</p>
+            <BsArrowRightCircle id="enterIcon" />
+          </div>
+        </li>
+        <li>
+          <p>Change percent:</p>
+          <div className="listRightSec">
+            <p>{quote['10. change percent']}</p>
+            <BsArrowRightCircle id="enterIcon" />
+          </div>
+        </li>
       </ul>
-    </div>
+    </main>
   );
 };
 
