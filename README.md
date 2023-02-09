@@ -76,13 +76,23 @@ In order to run this project you need:
 
 ### Setup
 
-Clone this repository to your desired folder:
+- Clone this repository to your desired folder:
 
 ```sh
   $ cd my-folder
   $ git clone https://github.com/yuvenalmash/stock-411.git
 ```
-
+- Create a .env file in the root folder
+```sh
+  $ cd my-folder/stock-411
+  $ touch .env
+```
+- Generate an API key from [stock data](https://www.stockdata.org/)
+- Add the key in the .env file. (Replace '12345' with the generated API key)
+```sh
+  $ cd my-folder/stock-411
+  $ echo "REACT_APP_STOCKDATA_API_KEY=12345" > .env
+```
 ### Usage
 
 To run the project, execute the following command:
