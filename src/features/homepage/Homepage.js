@@ -14,8 +14,6 @@ import { selectAllQuotes, selectState, fetchQoutes } from './homepageSlice';
 import Card from './Card';
 import './css/Homepage.css';
 
-// import headerImg from '../../assets/images/homeHeader1.png';
-
 const Homepage = () => {
   const dispatch = useDispatch();
   const status = useSelector(selectState);
@@ -37,7 +35,6 @@ const Homepage = () => {
         </div>
       </nav>
       <header id="home-header">
-        {/* <img id="home-img" src={headerImg} alt="stock-market" /> */}
         <div className="headerImg">
           <BsGraphUp className="homeImg" />
           <RiComputerLine className="homeImg" />
@@ -67,7 +64,7 @@ const Homepage = () => {
           411
         </h1>
       </header>
-      <div id="separator"><h2>STATS BY COMPANY</h2></div>
+      <div id="separator"><h3>STATS BY COMPANY</h3></div>
       <ul id="home-list">
         {quotes.map((quote) => (
           <li key={quote.ticker}>
