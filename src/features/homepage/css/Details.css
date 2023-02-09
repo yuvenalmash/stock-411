@@ -1,0 +1,18 @@
+#details-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.listRightSec {
+  display: flex;
+  gap: 10px;
+}
+
+#details-list li:nth-child(odd) {
+  background-color: #4066ad;
+}
+
+#details-list li:nth-child(even) {
+  background-color: #3c5ea0;
+}

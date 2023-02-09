@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import homepageReducer from '../features/homepage/homepageSlice';
 
-export const store = configureStore({
+const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    homepage: homepageReducer,
   },
 });
+
+export default store;
