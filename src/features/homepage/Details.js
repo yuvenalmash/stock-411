@@ -12,7 +12,7 @@ const Details = () => {
   return (
     <main className="details">
       <nav id="details-nav">
-        <Link to="/"><BsChevronLeft className="navIcon" /></Link>
+        <Link to="/stock-411/"><BsChevronLeft className="navIcon" /></Link>
         Company Details
         <div id="rightNav">
           <BsMic className="navIcon" />
@@ -29,7 +29,7 @@ const Details = () => {
           {quote.ticker}
         </h2>
       </header>
-      <div id="separator"><h2>COMPANY BREAKDOWN</h2></div>
+      <div id="separator"><h3>COMPANY BREAKDOWN</h3></div>
       <ul id="details-list">
         <li>
           <p>Currency:</p>
