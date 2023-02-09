@@ -55,7 +55,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://stock-411.netlify.app/)
+- [Live Demo Link](https://yuvenalmash.github.io/stock-411/)
 - [video Demo](https://www.loom.com/share/c8c09a827ec041dfb0827a55438a2b51)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
