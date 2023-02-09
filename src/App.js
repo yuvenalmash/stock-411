@@ -5,9 +5,9 @@ import Details from './features/homepage/Details';
 const App = () => (
   <BrowserRouter>
     <Routes>
-      <Route path="/">
+      <Route path="/stock-411/">
         <Route index element={<Homepage />} />
-        <Route path="details" element={<Details />} />
+        <Route path="/stock-411/details" element={<Details />} />
       </Route>
     </Routes>
   </BrowserRouter>
