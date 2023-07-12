@@ -30,7 +30,7 @@ const Card = (props) => {
         <div id="imgContainer">
           <Img symbol={quote.ticker} />
         </div>
-        <Link to="details" state={quote}><BsArrowRightCircle id="enterIcon" /></Link>
+        <Link to="details" state={quote} id="button"><BsArrowRightCircle id="enterIcon" /></Link>
       </header>
       <h2>
         {quote.ticker}
