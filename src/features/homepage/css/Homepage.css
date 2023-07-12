@@ -27,6 +27,7 @@ nav {
   display: flex;
   text-align: right;
   padding: 20px 20px;
+  gap: 10px;
   background-color: #5483dd;
 }
 
@@ -36,12 +37,22 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 5px;
-  width: 50%;
+  max-width: 50%;
 }
 
 .homeImg {
   color: #34538a;
   font-size: 25px;
+}
+
+#button {
+  border-radius: 5px;
+  padding: 2px;
+  height: 18px;
+}
+
+#button:hover {
+  background-color: #124144;
 }
 
 #separator {
@@ -50,13 +61,26 @@ nav {
   padding: 0 5px;
 }
 
+#home-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #home-list {
   display: flex;
+  width: fit-content;
+  max-width: 600px;
+  justify-content: center;
   flex-wrap: wrap;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  padding: 5px;
 }
 
 #home-list li {
-  width: 50%;
+  /* width: 50%; */
+  max-width: 300px;
   list-style: none;
   background-color: #4066ad;
 }

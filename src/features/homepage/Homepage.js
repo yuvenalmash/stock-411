@@ -4,7 +4,6 @@ import {
   BsGraphUp, BsFillBarChartLineFill, BsFillCalculatorFill,
   BsFillCalendar2DateFill, BsFillPieChartFill, BsFillRssFill,
   BsChatQuoteFill, BsCoin, BsCpuFill, BsGraphDown, BsTerminalFill,
-  BsMic, BsGear, BsChevronLeft,
 } from 'react-icons/bs';
 import {
   RiAtLine, RiCloudLine, RiCodeBoxFill, RiBaseStationLine,
@@ -27,12 +26,9 @@ const Homepage = () => {
   return (
     <main className="homepage">
       <nav id="home-nav">
-        <BsChevronLeft className="navIcon" />
+        <div id="leftNav" />
         Tech Stock
-        <div id="rightNav">
-          <BsMic className="navIcon" />
-          <BsGear className="navIcon" />
-        </div>
+        <div id="rightNav" />
       </nav>
       <header id="home-header">
         <div className="headerImg">
@@ -65,15 +61,17 @@ const Homepage = () => {
         </h1>
       </header>
       <div id="separator"><h3>STATS BY COMPANY</h3></div>
-      <ul id="home-list">
-        {quotes.map((quote) => (
-          <li key={quote.ticker}>
-            <Card
-              quote={quote}
-            />
-          </li>
-        ))}
-      </ul>
+      <div id="home-list-container">
+        <ul id="home-list">
+          {quotes.map((quote) => (
+            <li key={quote.ticker}>
+              <Card
+                quote={quote}
+              />
+            </li>
+          ))}
+        </ul>
+      </div>
     </main>
   );
 };

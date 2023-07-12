@@ -1,5 +1,17 @@
+#details-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+}
+
+/* #details-list {
+  max-width: 1000px;
+} */
+
 #details-list li {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   padding: 10px;
 }
